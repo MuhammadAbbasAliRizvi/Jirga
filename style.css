@@ -1,0 +1,726 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 100px;
+    padding: 20px;
+    width: 100%;
+}
+
+.menu-bar{
+    display: none;
+}
+
+
+.header__contact{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    /* border: 2px solid red; */
+    /* border: ; */
+}
+
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-weight: 400;
+    white-space: inherit;
+}
+
+.banner img{
+    width: 100%;
+    height: 100vh;
+}
+
+.header__nav div{
+    cursor: pointer;
+
+}
+
+.header__slug{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.franchise{
+    /* border: 1px solid white; */
+    padding: 12px 15px;
+    border-radius: 35px;
+    cursor: pointer;
+    font-weight: 400;
+    background-color: black;
+    color: white;
+
+}
+
+.order{
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    border-radius: 35px;
+    background-color: red;
+    gap: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 400;
+    color: white;
+}
+
+.order i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+    color: red;
+    padding: 5px;
+}
+
+.header__nav div:hover{
+    color: red;
+}
+
+.banner img{
+    width: 100%;
+    height: auto;
+}
+
+.brands{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    gap: 50px;
+    padding: 100px 0;
+}
+
+.brands__description{
+    display: flex;
+    flex-direction: column;
+    /* line-height: 1; */
+    gap: 3px;
+}
+
+.welcome{
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.welcome span{
+    font-size: 52px;
+    font-family: futurak;
+    font-weight: 800;
+}
+
+.click_info{
+    color: #969696;
+}
+
+.brands__images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.brands__images img{
+    background-color: white;
+    /* padding: 0 14px; */
+    height: 140px;
+    width: 250px;
+    border-radius: 5px;
+    object-fit: none;
+}
+
+.brands__images button{
+    border: 1px solid #969696;
+    padding: 15px 50px;
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.brand__image{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.franchises{
+    background-color: #0F0F0F;
+    width: 100%;
+}
+
+.franchise__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 8px;
+    padding-top: 80px;
+}
+
+.franchise__info h1{
+    font-size: 52px;
+    font-weight: 500;
+}
+
+.franchise__info h2{
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.franchise__info p{
+    color: #969696;
+
+}
+
+.franchise__locations{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    gap: 60px;
+    color: white;
+    flex-wrap: wrap;
+    width: 25%;
+    /* border: 1px solid white; */
+}
+
+.franchise__location{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    gap: 12px;
+    /* align-items: center; */
+}
+
+.location_City{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 10px;
+}
+
+.city{
+    color: red;
+    letter-spacing: 7px;
+    font-weight: 300;
+    font-size: 18px;
+
+}
+
+.location__info{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.location__address{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    gap: 5px;
+}
+
+.location__phone{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 5px;
+}
+
+.location__Direction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    border-radius: 35px;
+    background-color: #0F0F0F;
+    gap: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 400;
+    color: white;
+    border: 1px solid white;
+}
+
+.location__Direction i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+    color: #4FA746;
+    padding: 5px;
+}
+
+.franchise__container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+    /* align-items: center; */
+    /* margin: auto; */
+    /* gap: 60px; */
+    /* margin: 0 30px; */
+}
+
+.franchise__images img{
+    width: 600px;
+    height: 400px;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+
+.franchise__container button{
+    cursor: pointer;
+}
+
+.expressFrancises{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 80px 0;
+    min-width: 100%;
+    flex-wrap: wrap;
+}
+
+.express__heading h2{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.express__heading div{
+    font-size: 48px;
+}
+
+.express__Button button{
+    background-color: transparent;
+    border-radius: 30px;
+}
+
+.card__description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    word-wrap: normal;
+    /* border: 2px solid red; */
+    height: auto;
+    width: 450px;
+}
+
+.card__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    /* border: 1px solid white; */
+}
+
+.card img{
+    width: 100%;
+    height: 30vh;
+}
+
+.express__cards{
+    /* margin: 50px 20px 0 20px; */
+}
+
+.card img{
+    margin-top: 40px ;
+}
+
+.village__Franchise{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap ;
+    padding: 20px 0;
+    background-color: #0F0F0F;
+    color: black;
+}
+
+.Village__heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    color: white; 
+}
+
+.Village__heading h1{
+    font-size: 52px;
+}
+
+.Village__heading p{
+    font-size: 48px;
+}
+
+.gujranwalabranchImage{
+    padding: 20px 0;
+    width: 30%;
+    /* height: 100vh; */
+    /* border: 1px solid white; */
+}
+
+.gujranwalabranchImage img{ 
+    width: 100%;
+    /* height: 100vh; */
+}
+
+.gujranWalaBranchLocation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    gap: 20px;
+    width: 100%;
+}
+
+.direction button{
+    background-color: #4FA746;
+    border: none;
+}
+
+.opening__soon{
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    padding: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    /* border: 1px solid white; */
+}
+
+.opening__soon__heading{
+    color: white;
+}
+
+.opening__soon__heading h1{
+    font-size: 52px;
+}
+
+.opening__soon__heading p{
+    font-size: 26px;
+}
+
+.p{
+    display: flex;
+    gap: 5px;
+}
+
+.opening_location i{
+    background-color: #E8EBE8;
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+.opening__cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.opening__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: white;
+    height: 250px;
+    width: 420px;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.opening__card p{
+    color: red;
+    letter-spacing: 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.opening__city{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    /* justify-content: space-between; */
+}
+
+.opening__b{
+    font-weight: bold;
+    font-size: 24px !important; 
+}
+
+.express{
+    font-size: 20px ;
+}
+
+.opening__city__name{
+    font-size: 20px ;
+}
+
+.our_food{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-color: black;
+    gap: 20px;
+}
+
+.feed{
+    color: #212529;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.food__images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background-color: #0F0F0F;
+    color: #B5AD8C;
+    flex-wrap: wrap;
+    padding: 60px 0;
+}
+
+.logo__section{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    gap: 30px;
+    width: 26%;
+    font-size: 16px;
+    /* border: 1px solid white; */
+    /* font-weight: 100; */
+}
+
+.terms__section{
+    display: flex;
+    gap: 10px;
+    /* justify-content: space-around; */
+    align-items: start;
+}
+
+.terms__section div{
+    cursor: pointer;
+}
+
+.sites__section{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    /* justify-content: space-between; */
+}
+
+.page__links{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 16px;
+
+    /* justify-content: space-between; */
+}
+
+.page__links div{
+    cursor: pointer;
+}
+
+.contact__section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 60px;
+    width: 15%;
+    /* width: 26%; */
+    font-size: 16px;
+    /* border: 1px solid white; */
+}
+
+.contact__details_section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.headOffice_details{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* justify-content: space-between; */
+}
+
+.headOffice_details p{
+    font-weight: 900;
+}
+
+.socail_section{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.socail__links{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.socail__links i{
+    background-color: #E62E2D;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1440px) {
+    .header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: black;
+        color: white;
+        /* height: 100px; */
+        /* padding: 20px; */
+        width: 100%;
+    }
+    .village__Franchise{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap ;
+        padding: 20px 0;
+        background-color: #0F0F0F;
+        color: black;
+    }
+    .card__container{
+        display: flex;
+        justify-content: center;
+        /* flex-direction: column; */
+        gap: 20px;
+        flex-wrap: wrap;
+        
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        color: white;
+        gap: 0;
+        /* padding: 0 50px; */
+        /* height: 100px; */
+        /* padding: 20px; */
+        width: 100%;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        color: white;
+        /* height: 100px; */
+        /* padding: 20px; */
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .header__nav{
+        display: none;
+
+    }
+    .menu-bar{
+        display: flex;
+        cursor: pointer;
+    }
+
+    .header__slug{
+        display: flex;
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .franchise{
+        display: none;
+    }
+    .franchise__images img{
+        width: 100%;
+    }
+    .opening__card{
+        width: 100%;
+    }
+    .food__images{
+        width: 100%;
+    }
+}
