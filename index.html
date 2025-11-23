@@ -3,492 +3,449 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jirga Restaurants - Authentic Pakistani Cuisine</title>
+    <meta name="description" content="Experience authentic Pakistani cuisine at Jirga Restaurants. Multiple locations across Pakistan offering dine-in, takeaway, and delivery services.">
+    
+    <!-- External Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="./style.css">
-    <title>salt n paper</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="head">
-        <!-- <div class="menu-bar"><i class="fa-solid fa-bars"></i></div> -->
-        <div><img src="./pics/logo2.png" alt="Logo" width="150" height="80"></div>
-        <div class="header__contact">
-            <div class="header__nav">
-                <div>Home</div>
-                <div>About Us</div>
-                <div>Publications</div>
-            </div>
-            <div class="header__slug">
-                <button class="franchise">Get a Franchise</button>
-                <button class="order">Order Online 
-                    <span>
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </span>
-                </button>
-                <div></div>
-            </div>
-        </div>
-    </div>
-    <div class="banner">
-        <img src="./pics/Types-Of-Restaurants.jpg" alt="Banner Image" />
-    </div>
-    <div class="brands">
-        <div class="brands__description">
-            <div class="welcome">Welcome to 
-                <span>Salt'n Pepper</span>
-            </div>
-            <div class="welcome">Restaurants! Our Brands</div>
-            <div class="click_info">Please click our brands below for further information, reservations or to order online!   
-            </div>
-        </div>
-        <div class="brands__images">
-            <div class="brand__image">
-                <div>
-                    <img src="./pics/download (3.1).png" alt="Salt'n Pepper Resturent" />
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="./pics/newlogo.png" alt="Jirga Restaurant Logo" width="150" height="80">
                 </div>
-                <div>
-                    <a href="#"><button> Order Now </button></a>
+                
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="./menu.html">Menu</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#locations">Locations</a></li>
+                        <li><a href="#publications">Publications</a></li>
+                        <li><a href="#social">Social Feed</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-actions">
+                    <button class="btn btn-outline-light franchise-btn">Get a Franchise</button>
+                    <button class="btn btn-danger order-btn">
+                        Order Online <i class="fas fa-arrow-right"></i>
+                    </button>
                 </div>
-            </div>
-            <div class="brand__image">
-                <div>
-                    <img src="./pics/images.jpg" alt="Salt'n Pepper Express" />
-                </div>
-                <div>
-                    <a href="#"><button> Order Now </button></a>
-                </div>
-            </div>
-            <div class="brand__image">
-                <div>
-                    <img src="./pics/images2.png" alt="Salt'n Pepper Village" />
-                </div>
-                <div>
-                    <a href="#">
-                        <button> Reserve a Table </button>
-                    </a>
+                
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="franchises">
-        <div class="franchise__info">
-            <div><h1>Salt'n Pepper</h1></div>
-            <div><h2>Restaurant Franchises</h2></div>
-            <div><p>Each of our franchises are individually managed. For further details, kindly contact them directly.</p></div>
-        </div>
-        <div class="franchise__container">
-        <div class="franchise__locations">
-            <div class="franchise__location">
-                <div class="location_City">
-                    <div class="city">Islamabad</div>
-                    <div><h2><span>Salt'n Pepper</span> Restaurant</h2></div>
-                </div>
-                <div class="location__info">
-                    <div class="location__address">
-                        <div><i class="fa-solid fa-location-dot"></i></div>
-                        <div>Plot# 55, Shabbir Plaza, Blue Area, F-6, Islamabad</div>
+    </header>
+
+    <!-- Hero Banner with Slider -->
+    <section class="hero-banner" id="home">
+        <div class="slider-container">
+            <div class="slider">
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <img src="./pics/yansi-keim-SJGem633mvA-unsplash.jpg" alt="Restaurant Interior">
+                    <div class="hero-text">
+                        <h1>Welcome to Jirga Restaurant</h1>
+                        <p>Experience the authentic taste of Pakistan</p>
+                        <button class="btn btn-primary">View Our Menu</button>
                     </div>
-                    <div class="location__phone">
-                        <div><i class="fa-solid fa-phone" style="color: #B197FC;"></i></div>
-                        <div>Ph: 051-2604904-6</div>
+                </div>
+                
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <img src="./pics/new5.png" alt="Delicious Food">
+                    <div class="hero-text">
+                        <h1>Authentic Pakistani Cuisine</h1>
+                        <p>Traditional recipes passed down through generations</p>
+                        <button class="btn btn-primary">Order Now</button>
+                    </div>
+                </div>
+                
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Fine Dining Experience">
+                    <div class="hero-text">
+                        <h1>Fine Dining Experience</h1>
+                        <p>Elegant ambiance with traditional Pakistani hospitality</p>
+                        <button class="btn btn-primary">Book a Table</button>
                     </div>
                 </div>
             </div>
-            <div>
-                <button class="location__Direction">Get Directions 
-                    <span>
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </span>
-                </button>
+            
+            <!-- Slider Controls -->
+            <button class="slider-arrow prev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="slider-arrow next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            
+            <div class="slider-controls">
+                <div class="slider-dot active"></div>
+                <div class="slider-dot"></div>
+                <div class="slider-dot"></div>
             </div>
         </div>
-        <div class="franchise__images">
-            <img src="./pics/78546675-58c9-445b-af2f-ca1364790829.webp" alt="Islamabad Branch" />
-        </div>
-        </div>
-    </div>
-    <div class="franchises">   
-     <div class="franchise__container">
-        <div class="franchise__images">
-            <img src="./pics/images (1).jpg" alt="Faisalabad Branch" />
-        </div>
-        <div class="franchise__locations">
-            <div class="franchise__location">
-                <div class="location_City">
-                    <div class="city">Faisalabad</div>
-                    <div><h2><span>Salt'n Pepper</span> Restaurant</h2></div>
-                </div>
-                <div class="location__info">
-                    <div class="location__address">
-                        <div><i class="fa-solid fa-location-dot"></i></div>
-                        <div>4-Kohinoor City, Faisalabad</div>
-                    </div>
-                    <div class="location__phone">
-                        <div><i class="fa-solid fa-phone" style="color: #B197FC;"></i></div>
-                        <div>Ph: 041-8711404</div>
-                    </div>
-                </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="brands-section" id="brands">
+        <div class="container">
+            <div class="section-header">
+                <h2>Welcome to <span>Jirga</span> Restaurants!</h2>
+                <h3>Our Brands</h3>
+                <p>Please click our brands below for further information, reservations or to order online!</p>
             </div>
-            <div>
-                <button class="location__Direction">Get Directions 
-                    <span>
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </span>
-                </button>
-            </div>
-        </div>
-     </div>
-    </div>
-    <div class="franchises">
-        <div class="franchise__container">
-        <div class="franchise__locations">
-            <div class="franchise__location">
-                <div class="location_City">
-                    <div class="city">Bahawalpur</div>
-                    <div><h2><span>Salt'n Pepper</span> Restaurant</h2></div>
-                </div>
-                <div class="location__info">
-                    <div class="location__address">
-                        <div><i class="fa-solid fa-location-dot"></i></div>
-                        <div>D.C Chowk, opposite Commissioner House, Bahawalpur</div>
+            
+            <div class="brands-grid">
+                <div class="brand-card">
+                    <div class="brand-image">
+                        <img src="./pics/new3.png" alt="Jirga Restaurant">
                     </div>
-                    <div class="location__phone">
-                        <div><i class="fa-solid fa-phone" style="color: #B197FC;"></i></div>
-                        <div>Ph: 062-2740271-2</div>
+                    <div class="brand-info">
+                        <h4>Jirga Restaurant</h4>
+                        <p>Fine dining experience with authentic Pakistani cuisine</p>
+                        <button class="btn btn-outline-light">Order Now</button>
+                    </div>
+                </div>
+                
+                <div class="brand-card">
+                    <div class="brand-image">
+                        <img src="./pics/new5.png" alt="Jirga Express">
+                    </div>
+                    <div class="brand-info">
+                        <h4>Jirga Express</h4>
+                        <p>Quick service restaurant for on-the-go meals</p>
+                        <button class="btn btn-outline-light">Order Now</button>
+                    </div>
+                </div>
+                
+                <div class="brand-card">
+                    <div class="brand-image">
+                        <img src="./pics/yansi-keim-SJGem633mvA-unsplash.jpg" alt="Jirga Village">
+                    </div>
+                    <div class="brand-info">
+                        <h4>Jirga Village</h4>
+                        <p>Traditional village-style dining experience</p>
+                        <button class="btn btn-outline-light">Reserve a Table</button>
                     </div>
                 </div>
             </div>
-            <div>
-                <button class="location__Direction">Get Directions 
-                    <span>
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </span>
-                </button>
+        </div>
+    </section>
+
+    <!-- Franchise Locations -->
+    <section class="franchise-locations" id="locations">
+        <div class="container">
+            <div class="section-header">
+                <h1>Jirga Restaurant</h1>
+                <h2>Restaurant Franchises</h2>
+                <p>Each of our franchises are individually managed. For further details, kindly contact them directly.</p>
+            </div>
+
+            <!-- Islamabad Location -->
+            <div class="location-card">
+                <div class="location-info">
+                    <div class="city-tag">Islamabad</div>
+                    <h3><span>Jirga</span> Restaurant</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Plot# 55, Shabbir Plaza, Blue Area, F-6, Islamabad</p>
+                        <p><i class="fas fa-phone"></i> Ph: 051-2604904-6</p>
+                    </div>
+                    <button class="btn btn-outline-light direction-btn">
+                        Get Directions <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="location-image">
+                    <img src="./pics/new5.png" alt="Islamabad Branch">
+                </div>
+            </div>
+
+            <!-- Faisalabad Location -->
+            <div class="location-card reverse">
+                <div class="location-image">
+                    <img src="./pics/alexander-fastovets-AzWGBFenLyY-unsplash.jpg" alt="Faisalabad Branch">
+                </div>
+                <div class="location-info">
+                    <div class="city-tag">Faisalabad</div>
+                    <h3><span>Jirga</span> Restaurant</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 4-Kohinoor City, Faisalabad</p>
+                        <p><i class="fas fa-phone"></i> Ph: 041-8711404</p>
+                    </div>
+                    <button class="btn btn-outline-light direction-btn">
+                        Get Directions <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Bahawalpur Location -->
+            <div class="location-card">
+                <div class="location-info">
+                    <div class="city-tag">Bahawalpur</div>
+                    <h3><span>Jirga</span> Restaurant</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> D.C Chowk, opposite Commissioner House, Bahawalpur</p>
+                        <p><i class="fas fa-phone"></i> Ph: 062-2740271-2</p>
+                    </div>
+                    <button class="btn btn-outline-light direction-btn">
+                        Get Directions <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="location-image">
+                    <img src="./pics/Restaurant Branding.jpg" alt="Bahawalpur Branch">
+                </div>
             </div>
         </div>
-        <div class="franchise__images">
-            <img src="./pics/images (2).jpg" alt="Bhawalpur Branch" />
-        </div>
-        </div>
-    </div>
-    <div class="expressFrancises">
-        <div class="express__heading"> 
-            <div><h2>Salt'n Pepper</h2>
-            Express Franchises</div>
-        </div>
-        <div class="card__container">
-            <div class="express__cards">
-                <div class="card">
-                    <img src="./pics/downloadd.jpg" alt="Bahria Town Express Branch"  width="450" height="280"/>
-                </div>
-                <div class="card__description">
-                    <div>
-                        <div class="franchise__location">
-                            <div class="location_City">
-                                <div class="city">malir</div>
-                                <div><h2><span>Salt'n Pepper</span> Restaurant</h2></div>
-                            </div>
-                            <div class="location__info">
-                                <div class="location__address">
-                                    <div><i class="fa-solid fa-location-dot"></i></div>
-                                    <div>39-z Phase III,malir,karachi</div>
-                                </div>
-                                <div class="location__phone">
-                                    <div><i class="fa-solid fa-phone" style="color: #B197FC;"></i></div>
-                                    <div style="text-align: center !important;
-                                    width: 100%;">Ph:03212997056</div>
-                                </div>
-                            </div>
+    </section>
+
+    <!-- Express Franchises -->
+    <section class="express-franchises">
+        <div class="container">
+            <div class="section-header">
+                <h2>Jirga Restaurant</h2>
+                <h3>Express Franchises</h3>
+            </div>
+            
+            <div class="express-grid">
+                <!-- Malir Location -->
+                <div class="express-card">
+                    <img src="./pics/new5.png" alt="Malir Express Branch">
+                    <div class="card-body">
+                        <div class="city-tag">Malir</div>
+                        <h4><span>Jirga</span> Express</h4>
+                        <div class="contact-info">
+                            <p><i class="fas fa-map-marker-alt"></i> 39-z Phase III, Malir, Karachi</p>
+                            <p><i class="fas fa-phone"></i> Ph: 03212997056</p>
                         </div>
+                        <button class="btn btn-outline-light direction-btn">
+                            Get Directions <i class="fas fa-arrow-right"></i>
+                        </button>
                     </div>
-                    <div class="express__Button">
-                        <button class="location__Direction">Get Directions 
-                            <span>
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </span>
+                </div>
+
+                <!-- Landhi Location -->
+                <div class="express-card">
+                    <img src="./pics/downloadd2.jpg" alt="Landhi Express Branch">
+                    <div class="card-body">
+                        <div class="city-tag">Landhi</div>
+                        <h4><span>Jirga</span> Express</h4>
+                        <div class="contact-info">
+                            <p><i class="fas fa-map-marker-alt"></i> Arwa Heights Building 19 Nishtar Block, Sector E, Landhi Town, Karachi</p>
+                            <p><i class="fas fa-phone"></i> Ph: 0321-111-100-678</p>
+                        </div>
+                        <button class="btn btn-outline-light direction-btn">
+                            Get Directions <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Gujar Khan Location -->
+                <div class="express-card">
+                    <img src="./pics/d3.jpg" alt="Gujar Khan Express Branch">
+                    <div class="card-body">
+                        <div class="city-tag">Gujar Khan</div>
+                        <h4><span>Jirga</span> Express</h4>
+                        <div class="contact-info">
+                            <p><i class="fas fa-map-marker-alt"></i> New Metro City Gujar Khan</p>
+                            <p><i class="fas fa-phone"></i> Ph: 0321-1114962</p>
+                        </div>
+                        <button class="btn btn-outline-light direction-btn">
+                            Get Directions <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Lahore Location -->
+                <div class="express-card">
+                    <img src="./pics/d4.jpg" alt="Lahore Express Branch">
+                    <div class="card-body">
+                        <div class="city-tag">Lahore</div>
+                        <h4><span>Jirga</span> Restaurant</h4>
+                        <div class="contact-info">
+                            <p><i class="fas fa-map-marker-alt"></i> Shop no.5, Arcade Block, Fortress Stadium, Lahore</p>
+                            <p><i class="fas fa-phone"></i> Ph: 042-366-23-100</p>
+                        </div>
+                        <button class="btn btn-outline-light direction-btn">
+                            Get Directions <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Gujrat Location -->
+                <div class="express-card">
+                    <img src="./pics/d5.jpg" alt="Gujrat Express Branch">
+                    <div class="card-body">
+                        <div class="city-tag">Gujrat</div>
+                        <h4><span>Jirga</span> Pizza House</h4>
+                        <div class="contact-info">
+                            <p><i class="fas fa-map-marker-alt"></i> Service Mor, Gujrat</p>
+                            <p><i class="fas fa-phone"></i> Ph: 0311-1124600</p>
+                        </div>
+                        <button class="btn btn-outline-light direction-btn">
+                            Get Directions <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Sahiwal Location -->
+                <div class="express-card">
+                    <img src="./pics/d6.jpg" alt="Sahiwal Express Branch">
+                    <div class="card-body">
+                        <div class="city-tag">Sahiwal</div>
+                        <h4><span>Jirga</span> Express</h4>
+                        <div class="contact-info">
+                            <p><i class="fas fa-map-marker-alt"></i> Opposite Main Gate Police Line, Sahiwal</p>
+                            <p><i class="fas fa-phone"></i> Ph: 040-4515485</p>
+                        </div>
+                        <button class="btn btn-outline-light direction-btn">
+                            Get Directions <i class="fas fa-arrow-right"></i>
                         </button>
                     </div>
                 </div>
             </div>
-            <div class="express__cards">
-            <div class="card">
-                <img src="./pics/downloadd2.jpg" alt="Bahria Town Express Branch"  width="450" height="280"/>
-            </div>
-            <div class="card__description">
-                <div>
-                    <div class="franchise__location">
-                        <div class="location_City">
-                            <div class="city">landhi</div>
-                            <div><h2><span>Salt'n Pepper</span> Restaurant</h2></div>
-                        </div>
-                        <div class="location__info">
-                            <div class="location__address">
-                                <div><i class="fa-solid fa-location-dot"></i></div>
-                                <div>Arwa Heights Building 19 Nishtar Block, Sector E, landhi Town, karachi</div>
-                            </div>
-                            <div class="location__phone">
-                                <div><i class="fa-solid fa-phone" style="color: #B197FC;"></i></div>
-                                <div style="text-align: center !important;
-                                width: 100%;">Ph: 0321-111-100-678</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="express__Button">
-                    <button class="location__Direction">Get Directions 
-                        <span>
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </span>
-                    </button>
-                </div>
-            </div>
-            </div>
-            <div class="express__cards">
-            <div class="card">
-                <img src="./pics/d3.jpg" alt="Gujar Khan Express Branch"  width="450" height="280"/>
-            </div>
-            <div class="card__description">
-                <div>
-                    <div class="franchise__location">
-                        <div class="location_City">
-                            <div class="city">Gujar Khan</div>
-                            <div><h2><span>Salt'n Pepper</span> Restaurant</h2></div>
-                        </div>
-                        <div class="location__info">
-                            <div class="location__address">
-                                <div><i class="fa-solid fa-location-dot"></i></div>
-                                <div>New Metro City Gujar Khan</div>
-                            </div>
-                            <div class="location__phone">
-                                <div><i class="fa-solid fa-phone" style="color: #B197FC;"></i></div>
-                                <div style="text-align: center !important;
-                                width: 100%;">Ph: 0321-1114962</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="express__Button">
-                    <button class="location__Direction">Get Directions 
-                        <span>
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </span>
-                    </button>
-                </div>
-            </div>
-            </div>
-            <div class="express__cards">
-            <div class="card">
-                <img src="./pics/d4.jpg" alt="Lahore Express Branch"  width="450" height="280"/>
-            </div>
-            <div class="card__description">
-                <div>
-                    <div class="franchise__location">
-                        <div class="location_City">
-                            <div class="city">Lahore</div>
-                            <div><h2><span>Salt'n Pepper</span> Restaurant</h2></div>
-                        </div>
-                        <div class="location__info">
-                            <div class="location__address">
-                                <div><i class="fa-solid fa-location-dot"></i></div>
-                                <div>Shop no.5, Arcade Block, Fortress Stadium, Lahore</div>
-                            </div>
-                            <div class="location__phone">
-                                <div><i class="fa-solid fa-phone" style="color: #B197FC;"></i></div>
-                                <div style="text-align: center !important;
-                                width: 100%;">Ph: 042-366-23-100</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="express__Button">
-                    <button class="location__Direction">Get Directions 
-                        <span>
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </span>
-                    </button>
-                </div>
-            </div>
-            </div>
-            <div class="express__cards">
-            <div class="card">
-                <img src="./pics/d5.jpg" alt="Gujrat Express Branch"  width="450" height="280"/>
-            </div>
-            <div class="card__description">
-                <div>
-                    <div class="franchise__location">
-                        <div class="location_City">
-                            <div class="city">Gujrat</div>
-                            <div><h2><span>Salt'n Pepper</span> Restaurant</h2></div>
-                        </div>
-                        <div class="location__info">
-                            <div class="location__address">
-                                <div><i class="fa-solid fa-location-dot"></i></div>
-                                <div>Service Mor, Gujrat</div>
-                            </div>
-                            <div class="location__phone">
-                                <div><i class="fa-solid fa-phone" style="color: #B197FC;"></i></div>
-                                <div style="text-align: center !important;
-                                width: 100%;">Ph: 0311-1124600</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="express__Button">
-                    <button class="location__Direction">Get Directions 
-                        <span>
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </span>
-                    </button>
-                </div>
-            </div>
-            </div>
-            <div class="express__cards">
-            <div class="card">
-                <img src="./pics/d6.jpg" alt="Sahiwal Express Branch"  width="450" height="280"/>
-            </div>
-            <div class="card__description">
-                <div>
-                    <div class="franchise__location">
-                        <div class="location_City">
-                            <div class="city">Sahiwal</div>
-                            <div><h2><span>Salt'n Pepper</span> Restaurant</h2></div>
-                        </div>
-                        <div class="location__info">
-                            <div class="location__address">
-                                <div><i class="fa-solid fa-location-dot"></i></div>
-                                <div>Opposite Main Gate Police Line, Sahiwal</div>
-                            </div>
-                            <div class="location__phone">
-                                <div><i class="fa-solid fa-phone" style="color: #B197FC;"></i></div>
-                                <div style="text-align: center !important;
-                                width: 100%;">Ph: 040-4515485</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="express__Button">
-                    <button class="location__Direction">Get Directions 
-                        <span>
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </span>
-                    </button>
-                </div>
-            </div>
-            </div>
         </div>
-    </div>
-    <div class="village__Franchise">
-        <div class="Village__heading">
-            <div><h1>Salt'n Pepper</h1></div>
-            <div><p>Village Franchise</p></div>
-        </div>
-        <div class="gujranWalaBranchLocation">
-            <div class="gujranwalabranchImage">
-                <img src="./pics/downloadd.jpg" alt="Gujran Wala Village franchise" />
-            </div>
-            <div class="franchise__locations">
-                <div class="franchise__location">
-                    <div class="location_City">
-                        <div class="city">GUJRANWALA</div>
-                        <div><h2><span>Salt'n Pepper</span> Village</h2></div>
-                    </div>
-                    <div class="location__info">
-                        <div class="location__address">
-                            <div><i class="fa-solid fa-location-dot"></i></div>
-                            <div>Adjacent to Rida Marquees /DHA Main Gate, GT Road Gujranwala Cantt</div>
-                        </div>
-                        <div class="location__phone">
-                            <div><i class="fa-solid fa-phone" style="color: #B197FC;"></i></div>
-                            <div>Ph: 055-3884500 | ,055-3880400</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="direction">
-                    <button class="location__Direction">Get Directions 
-                        <span>
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    <div class="our_food">
-        <div class="feed">Social Feed</div>
-        <div class="food__images">
-            <img src="./pics/burger.jpg" alt="burger" width="300" height="300" />
-            <img src="./pics/socialfood.jpg" alt="socialfood" width="300" height="300" />
-            <img src="./pics/sandwich.jpg" alt="sandwhich " width="300" height="300" />
-            <img src="./pics/bbq.jpg" alt="bbq" width="300" height="300" />
-        </div>
-    </div>
-    <div class="footer">
-        <div class="logo__section">
-            <div><img src="./pics/logo2.png" alt="Logo" width="120" height="80"/></div>
-            <div>
-                <p>
-                The Salt’n Pepper Restaurants are an example of gracious dinning, outstanding service, extraordinary classic and contemporary cuisine. The restaurants have become the ultimate dinning destinations in Lahore. From family occasions to business dinner and moments of the heart, this place is where unforgettable memories are made.
-                </p>
-            </div>
-            <div class="terms__section">
-                <div>Terms & conditions</div>
-                <div>Privacy policy</div>
-            </div>
-        </div>
-        <div class="sites__section">
-            <div>Site Links</div>
-            <div class="page__links">
-                <div>Home</div>
-                <div>About Us</div>
-                <div>Publications</div>
-                <div>Get a Franchise</div>
-                <div>Feedback</div>
-            </div>
-        </div>
-        <div class="contact__section">
-            <div>Contacts Us</div>
-            <div class="contact__details_section">
-                <div class="headOffice_details">
-                    <div><p>Head office Address</p></div>
-                    <div>Foodconsults (Pvt) Ltd
-                        23-Usman Block, New GardenTown, Lahore, Pakistan
-                    </div>
-                </div>
-                <div class="headOffice_details">
-                    <div><p>Head office number</p></div>
-                    <div>+92 42 358 509 31</div>
-                    <div>+92 42 358 509 30</div>
-                </div>
-                <div class="headOffice_details">
-                    <div><p>Email Address</p></div>
-                    <div>snpfood@brain.net.pk</div>
-                </div>
-                <div>
-                    <div class="headOffice_details"><p>Free delivery number</p></div>
-                    <div>+92 42 111 100 678</div>
-                    <div>+92 03 111 444 610</div>
-                </div>
-            </div>
-        </div>
-        <div class="socail_section">
-            <div>Follow Us</div>
-            <div class="socail__links">
-                    <div>
-                        <i class="fa-brands fa-facebook-f" style="color: #fafafa;"></i>
-                    </div>
-                    <div>
-                        <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
-                    </div>
-                    <div>
-                        <i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i>
-                    </div>
-            </div>
-        </div>
-    </div>
-    
+    </section>
 
-    
-    
-    
+    <!-- Village Franchise -->
+    <section class="village-franchise">
+        <div class="container">
+            <div class="section-header">
+                <h1>Jirga Restaurant</h1>
+                <h2>Village Franchise</h2>
+            </div>
+            
+            <div class="village-location">
+                <div class="village-image">
+                    <img src="./pics/downloadd.jpg" alt="Gujranwala Village Franchise">
+                </div>
+                <div class="location-info">
+                    <div class="city-tag">GUJRANWALA</div>
+                    <h3><span>Jirga</span> Village</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Adjacent to Rida Marquees /DHA Main Gate, GT Road Gujranwala Cantt</p>
+                        <p><i class="fas fa-phone"></i> Ph: 055-3884500 | 055-3880400</p>
+                    </div>
+                    <button class="btn btn-success direction-btn">
+                        Get Directions <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Feed -->
+    <section class="social-feed" id="social">
+        <div class="container">
+            <h3 class="section-title">Social Feed</h3>
+            <div class="feed-grid">
+                <div class="feed-item">
+                    <img src="./pics/burger.jpg" alt="Jirga Burger">
+                    <div class="feed-overlay">
+                        <p>Our Signature Burger</p>
+                    </div>
+                </div>
+                <div class="feed-item">
+                    <img src="./pics/socialfood.jpg" alt="Jirga Food Platter">
+                    <div class="feed-overlay">
+                        <p>Traditional Platter</p>
+                    </div>
+                </div>
+                <div class="feed-item">
+                    <img src="./pics/sandwich.jpg" alt="Jirga Sandwich">
+                    <div class="feed-overlay">
+                        <p>Gourmet Sandwiches</p>
+                    </div>
+                </div>
+                <div class="feed-item">
+                    <img src="./pics/bbq.jpg" alt="Jirga BBQ">
+                    <div class="feed-overlay">
+                        <p>Authentic BBQ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <img src="./pics/newlogo.png" alt="Jirga Restaurant Logo" width="120" height="80">
+                    <p>Jirga Restaurants are an example of gracious dining, outstanding service, extraordinary classic and contemporary cuisine. The restaurants have become the ultimate dining destinations in Pakistan.</p>
+                    <div class="footer-links">
+                        <a href="#">Terms & conditions</a>
+                        <a href="#">Privacy policy</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section links">
+                    <h4>Site Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#brands">Our Brands</a></li>
+                        <li><a href="#locations">Locations</a></li>
+                        <li><a href="#publications">Publications</a></li>
+                        <li><a href="#social">Social Feed</a></li>
+                        <li><a href="#">Get a Franchise</a></li>
+                        <li><a href="#">Feedback</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section contact">
+                    <h4>Contact Us</h4>
+                    <div class="contact-info">
+                        <h5>Head office Address</h5>
+                        <p>Foodconsults (Pvt) Ltd<br>23-Usman Block, New GardenTown, Lahore, Pakistan</p>
+                        
+                        <h5>Head office number</h5>
+                        <p>+92 42 358 509 31<br>+92 42 358 509 30</p>
+                        
+                        <h5>Email Address</h5>
+                        <p>jirgafood@brain.net.pk</p>
+                        
+                        <h5>Free delivery number</h5>
+                        <p>+92 42 111 100 678<br>+92 03 111 444 610</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <div class="newsletter">
+                        <h5>Subscribe to our Newsletter</h5>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Jirga Restaurants. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./app.js"></script>
 </body>
 </html>
